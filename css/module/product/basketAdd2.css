@@ -1,0 +1,31 @@
+.xans-order-layerbasketpackage { position:fixed; top:54%; left:50%; z-index:3; transform: translate(-50%, -50%); width:41.14583333333333vw; padding: 0 2rem;}
+.xans-order-layerbasketpackage .ec-base-button {padding: 1.5625vw 0;}
+.xans-order-layerbasketpackage .ec-base-button .sizeS {width: 13.020833333333334vw; height: 3.60625vw; line-height: 3.70625vw; padding: 0; font-size: var(--big-font); border: none;}
+.xans-order-layerbasketpackage .ec-base-button a:first-child {background: var(--primary-color); color: #fff; margin-right: 10px;}
+.xans-order-layerbasketpackage .ec-base-button a:last-child {background: #eee; margin-left: 10px;}
+.xans-order-layerbasketpackage .ec-base-button .sizeS,
+.xans-order-layerbasket.content ul.prdList li.item .box {font-weight: var(--font-weight); font-family: 'NanumBarunGothic', sans-serif;}
+
+/* 장바구니 담긴 상품 구매 */
+.xans-order-layerbasket.content { padding:0; }
+.xans-order-layerbasket.content .totalCount {
+    padding: 65px 0 20px;
+    margin: 0 10px 15px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    font-size: var(--big-font);
+    font-weight: var(--font-weight);
+    letter-spacing: var(--);
+    letter-spacing: -.5px;
+}
+.xans-order-layerbasket.content .totalCount strong { color: var(--primary-color); }
+.xans-order-layerbasket.content ul.prdList { display:flex; margin-top: 25px;}
+.xans-order-layerbasket.content ul.prdList li.item .box {line-height:18px; text-align: center; font-family: 'NanumBarunGothic', sans-serif; font-weight: normal;}
+.xans-order-layerbasket.content ul.prdList .name {margin: 20px 0 10px; line-height: 20px;}
+.xans-order-layerbasket.content ul.prdList .name .ec-set-product-name { display:block; }
+.xans-order-layerbasket.content ul.column4 li.item { width: 25%; padding: 0 .8rem;}
+.xans-order-layerbasket.content ul.prdList ul { margin:0; }
+.xans-order-layerbasket.content ul.prdList ul li.price { margin:5px 0;}
+.xans-order-layerbasket.content ul.prdList .strike { text-decoration:line-through; }
+.xans-order-layerbasket.content ul.prdList .strike strong { font-weight:normal; }
+.xans-order-layerbasketpaging.ec-base-paginate {margin: 2.604166666666667vw 0 1.5625vw; transform: translateY(0);}

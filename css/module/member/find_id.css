@@ -1,0 +1,39 @@
+.xans-member-findid .findId { max-width: 1441px; margin: 0 auto; padding-top:168px; font-family: 'NanumBarunGothic', sans-serif; font-weight: var(--font-weight); font-size: var(--big-font); }
+.xans-member-findid .findId fieldset {position: relative; max-width:545px;  margin:0 auto; padding-top: 70px;}
+.xans-member-findid .boxTitle {font-size: 2.8rem; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000; font-family: 'Noto Sans KR',sans-serif;}
+.xans-member-findid .findId p { margin:10px 0 0; }
+.xans-member-findid .findId strong { display:inline-block; /* margin:0 0 5px; */ padding:0 20px 0 0; width:125px; text-align: right;}
+.xans-member-findid .findId .check { margin-bottom:30px; margin-left:150px; }
+.xans-member-findid .findId .member select { width:190px; height:51px; padding:0 4px; background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; font-size: 1rem; padding-left: 15px; outline: none; cursor: pointer; font-family: 'NanumBarunGothic',sans-serif; }
+
+.xans-member-findid .findId input[type=text],
+.xans-member-findid .findId input[type=password] { height:45px; line-height:28px; }
+
+.xans-member-findid .findId input[type=radio], 
+.xans-member-findid .findId input[type=checkbox] {accent-color: #000; margin-right: 5px;}
+
+.xans-member-findid .findId input[type=radio] + label,
+.xans-member-findid .findId input[type=checkbox] + label { margin:0 15px 0 2px; }
+
+.xans-member-findid .findId  #ipin_view { height:72px; }
+.xans-member-findid .findId .ipin,
+.xans-member-findid .findId .mobileauth { position:relative; margin:10px 0 0 0; }
+.xans-member-findid .findId .ipin strong,
+.xans-member-findid .findId .mobileauth strong { width:125px; vertical-align:top; }
+.xans-member-findid .findId .ipin span,
+.xans-member-findid .findId .mobileauth span { display:inline-block; width: 236px; margin:0 0 5px; line-height:18px; color:#757575; }
+.xans-member-findid .findId .ipin a,
+.xans-member-findid .findId .mobileauth a { position:absolute; bottom:0; left:137px; }
+
+.xans-member-findid .findId #name,
+.xans-member-findid .findId #email { width: 70%; height: 45px; }
+.xans-member-findid .findId #ssn1,
+.xans-member-findid .findId #ssn2 { width:176.5px; }
+.xans-member-findid .findId #mobile_auth_view { height:90px; }
+.xans-member-findid .findId #mobile1,
+.xans-member-findid .findId #mobile2,
+.xans-member-findid .findId #mobile3 { width:108.5px; height: 45px;}
+
+.xans-member-findid .findId .ec-base-button {width: 40%; padding:40px 0 10px; }
+.xans-member-findid.ec-base-box.typeThin {padding: 0;}
+.xans-member-findid .ec-base-button[class*="gColumn"] [class^='btn'] {height: 74px; line-height: 74px; padding: 0; font-weight: var(--font-weight); font-size: 1.2rem;}

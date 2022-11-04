@@ -1,0 +1,32 @@
+.my_shop_cate .guide_title {display: flex; align-items: center;}
+.my_shop_cate .triangle {width: 0px; height: 0px; border-bottom: calc( 10px * 1.732 ) solid #000; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(90deg); margin: 5px 30px 0;}
+.my_shop_cate .my_shop_list {margin-top: 7px;}
+.my_shop_cate .my_shop_list, 
+.xans-myshop-addrregister,
+.xans-myshop-addrregister .ec-base-button a {font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem; font-weight: var(--font-weight);}
+
+
+.xans-myshop-addrregister {max-width: 1441px; margin: 100px auto 0;}
+.xans-myshop-addrregister .ec-base-table table,
+.xans-myshop-addrregister .ec-base-table table tr {border-bottom: 2px solid #fff; border-left: none; border-right: none;}
+.xans-myshop-addrregister .ec-base-table tbody th,
+.xans-myshop-addrregister .ec-base-table td {border: none; background: #f5f5f5; padding: 30px 0 30px 30px;}
+.xans-myshop-addrregister .ec-base-table tr:nth-child(3) td {padding:  20px 0 20px 10px;}
+.xans-myshop-addrregister .ec-base-table tr:nth-child(3) td input {margin: 0 10px 2px 0;}
+.xans-myshop-addrregister .ec-base-table tr:nth-child(5) input,
+.xans-myshop-addrregister .ec-base-table tr:nth-child(4) input {width: 117.5px; margin: 0 5px;}
+.xans-myshop-addrregister input[type=text], input[type=password] {height: 40px;}
+.xans-myshop-addrregister input[id="ma_rcv_title"],input[id="ma_rcv_name"],input[id="address_addr1"],input[id="address_addr2"] {width: 400px;}
+
+.xans-myshop-addrregister .ec-base-table tr.right td {background: #fff; position: absolute; top: -50px; left: 0;}
+.xans-myshop-addrregister #SearchAddress {background: #fff; padding: 10px 25px; margin: -3px 0 0 -12px;}
+.xans-myshop-addrregister select {background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; width: 117.5px; height: 46px; margin-right: 5px; padding: 0 10px; background-color: #fff;}
+
+.xans-myshop-addrregister .ec-base-help {color: #a2a2a2; font-size: var(--small-font);}
+.xans-myshop-addrregister .ec-base-help h3 {margin: 50px 0 15px;}
+.xans-myshop-addrregister .ec-base-help h3 i {transform: translateY(2px);}
+.xans-myshop-addrregister .ec-base-help li {margin-bottom: 5px;}
+
+.xans-myshop-addrregister .ec-base-button {padding: 70px 0 0;}
+.xans-myshop-addrregister .ec-base-button .gRight {float: none;}
+.xans-myshop-addrregister .ec-base-button [class^='btn'][class*='Fix'].sizeS {width: 215.09px; height: 64.53px; line-height: 64.53px;}

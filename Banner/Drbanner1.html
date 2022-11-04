@@ -1,0 +1,112 @@
+<div class="mb-pick-wrap fade_effect">
+    <div class="mb-pick-title-wrap">
+        <div class="mb-pick-big-title">
+            <h1>MD'S PICK</h1>
+        </div>
+        <div class="mb-pick-small-title">
+            <P>
+                이것이 MCN-FIT! 우리는 스포츠에 가장 적합한 재료로<br>
+                완벽한 스포츠웨어 스포츠웨어 제작을 목표로 품질에 관해서는 타협하지 않습니다.
+            </P>
+        </div>
+    </div>
+    <div module="product_listmain_1">
+        <ul class="prdList column4">
+            <div class="mb-pick-slide">
+                <div>
+                    <li class="item" id="anchorBoxId_{$product_no}">
+                        <div class="box">
+                            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" alt="" class="thumb" /></a>
+                            <div class="status">
+                                <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons}</div>
+                                <!-- <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div> -->
+                            </div>
+                            <p class="name">
+                                <a href="/product/detail.html{$param}"><strong class="title {$product_name_title_display|display}">{$product_name_title} :</strong> {$product_name}</a>
+                            </p>
+                            <ul module="product_ListItem" class="product_listitem">
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+                <div>
+                    <li class="item" id="anchorBoxId_{$product_no}">
+                        <div class="box">
+                            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" alt="" class="thumb" /></a>
+                            <div class="status">
+                                <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons}</div>
+                            </div>
+                            <p class="name">
+                                <a href="/product/detail.html{$param}"><strong class="title {$product_name_title_display|display}">{$product_name_title} :</strong> {$product_name}</a>
+                            </p>
+                            <ul module="product_ListItem" class="product_listitem">
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+
+    // 엠디픽 슬라이드
+    $('.mb-pick-slide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2300,
+        centerMode: true,
+        centerPadding: '220px',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 3000,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+        ]
+    });
+
+    // 스크롤 페이드인
+    $(document).ready(function() {
+        $(window).scroll( function(){
+                
+            $('.fade_effect').each( function(){
+                
+                var target_cls = $(this).offset().top + $(this).outerHeight() / 9;
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                if( bottom_of_window > target_cls ){
+                    $(this).animate({'opacity':'1'},700);
+                }
+            }); 
+        });
+    });
+
+    // css 변경(font-size) - 엠디픽
+    $('.xans-product-listmain-1 .mb-pick-slide li.xans-record- span').css({'font-size': 'var(--big-font)'});
+    $('.xans-product-listmain-1 .mb-pick-slide li.xans-record-:first-child span').css({'color' : '#000'});
+    // $('.xans-product-listmain-1 p.name a span').css('font-size','var(--small-font)');
+
+</script>

@@ -1,0 +1,97 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="guide_title"><strong>GUIDE</strong></div>
+
+
+<div module="mall_faq">
+    <!--@css(/css/module/mall/faq.css)-->
+    <div class="titleArea">
+        <h1>이용안내</h1>
+    </div>
+    <div id="member" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>회원가입 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            {$member_info}
+        </div>
+    </div>
+
+    <div id="order" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>주문 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            {$order_info}
+        </div>
+    </div>
+
+    <div id="payment" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>결제 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            {$payment_info}
+        </div>
+    </div>
+
+    <div id="delivery" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>배송 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            <ul>
+                <li>배송 방법 : {$shipping_method}</li>
+                <li>배송 지역 : {$shipping_area}</li>
+                <li>배송 비용 : {$shipping_fee}</li>
+                <li>배송 기간 : {$shipping_period}</li>
+                <li>배송 안내 : {$shipping_agreement}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="change" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>교환/반품 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            {$product_change_info}
+        </div>
+    </div>
+
+    <div id="refund" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>환불 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            {$refund_info}
+        </div>
+    </div>
+
+    <div id="etc" class="ec-base-tab grid7">
+        <div class="title">
+            <h1>기타 안내</h1>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cont">
+            {$etc_info}
+        </div>
+    </div>
+</div>
+
+<script>
+
+    // 아코디언 js
+    var $title = $('.xans-mall-faq .title');
+    var $content = $('.xans-mall-faq .cont')
+    $content.hide();
+    $title.click(function(){
+        $(this).children().toggleClass('active');
+        $content.not($(this).next($content).slideToggle()).slideUp();
+    });
+</script>

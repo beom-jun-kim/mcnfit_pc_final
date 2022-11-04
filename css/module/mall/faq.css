@@ -1,0 +1,10 @@
+.guide_title {margin-top: 168px; font-family: 'Trebuchet MS'; font-size: 2.8rem; padding: 0 0 30px 70px; border-bottom: 1px solid #e1e1e1;}
+.xans-mall-faq {max-width: 1441px; margin: 0 auto; font-family: 'NanumBarunGothic', sans-serif;}
+.xans-mall-faq .ec-base-tab {padding: 0;}
+.xans-mall-faq .cont { padding:30px 80px 80px 80px; line-height:25px; font-size: 1rem; background: #f6f6f6;}
+.xans-mall-faq .cont h3 { margin:0 0 20px; color:#444; font-size:13px; }
+.xans-mall-faq .titleArea {font-size: .8rem;}
+.xans-mall-faq #member {border-top: 2px solid #000;}
+.xans-mall-faq .title {display: flex; justify-content: space-between; align-items: center; padding: 30px 80px; border-bottom: 1px solid #e1e1e1; font-size: .6rem; cursor: pointer;}
+.xans-mall-faq .title i {font-size: 1.6rem; transition: 300ms;}
+.xans-mall-faq .title i.active {transform: rotate(180deg);}

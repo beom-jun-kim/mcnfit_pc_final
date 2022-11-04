@@ -1,0 +1,13 @@
+.xans-myshop-couponserial .title { margin:0 0 10px 10px; /* font-family: 'Noto Sans KR',sans-serif; */}
+.xans-myshop-couponserial .couponSerial { text-align:center; }
+.xans-myshop-couponserial .couponSerial fieldset {margin: 30px 0 0;}
+.xans-myshop-couponserial .couponSerial #coupon_code {width:400px; height:60px; font-size:15px; text-align:center; }
+.xans-myshop-couponserial .couponSerial [class^='btn'].sizeM {height: 66px; line-height: 66px; font-weight: var(--font-weight); color: var(--white-color); padding: 0;}
+.xans-myshop-couponserial .couponSerial .btnSubmitFix { margin:-1px 0 0; }
+.xans-myshop-couponserial .couponSerial p { padding:20px 0 0; color:#a2a2a2; }
+
+.ec-base-help-coupon {max-width: 1441px; font-size: var(--small-font); color: #a2a2a2; font-family: 'NanumBarunGothic', sans-serif;}
+.ec-base-help-coupon.ec-base-help {margin: 150px auto;}
+.ec-base-help-coupon h3 {margin-bottom: 1rem;}
+.ec-base-help-coupon ol {line-height: 25px; font-weight: normal;}
+.ec-base-help-coupon i {transform: translateY(2px); margin-right: 5px;}

@@ -1,0 +1,17 @@
+.xans-layout-boardinfo { border-bottom:1px solid #e4e4e4; padding: 150px 30px 30px;}
+.xans-layout-boardinfo ul {display: flex; align-items: center;}
+.xans-layout-boardinfo ul li:first-child {font-size: 3rem; font-weight: var(--font-weight); font-family: 'Trebuchet MS'; letter-spacing: var(--letter-spacing); margin: 0;}
+.xans-layout-boardinfo ul li {font-size: 1rem; font-weight: var(--font-weight); font-family: 'NanumBarunGothic',sans-serif; height: 35px; line-height: 35px; margin-top: 7px;}
+.xans-layout-boardinfo ul li:nth-child(n+3) a {padding-right: 40px;}
+.xans-layout-boardinfo ul li:nth-child(n+3) li.active a,
+.xans-layout-boardinfo ul li:nth-child(n+3) a:hover {color: var(--primary-color);}
+.xans-layout-boardinfo .triangle {width: 0px; height: 0px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: calc( 10px * 1.732 ) solid #000; transform: rotate(90deg); margin: 5px 30px 0;}
+.xans-layout-boardinfo ul li:nth-child(3).active,
+.xans-layout-boardinfo ul li:nth-child(4).active,
+.xans-layout-boardinfo ul li:nth-child(5).active,
+.xans-layout-boardinfo ul li:nth-child(6).active,
+.xans-layout-boardinfo ul li:nth-child(7).active,
+.xans-layout-boardinfo ul li:nth-child(8).active {color: var(--primary-color);}
+
+
+

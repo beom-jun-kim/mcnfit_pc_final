@@ -1,0 +1,21 @@
+.my_shop_cate .guide_title {display: flex; align-items: center;}
+.my_shop_cate .triangle {width: 0px; height: 0px; border-bottom: calc( 10px * 1.732 ) solid #000; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(90deg); margin: 5px 30px 0;}
+.my_shop_cate .my_shop_list {margin-top: 7px; font-size: 1rem;}
+.xans-myshop-boardpackage,
+.my_shop_cate .my_shop_list,
+.xans-myshop-boardlistsearch select {font-family: 'NanumBarunGothic',sans-serif; font-weight: var(--font-weight);}
+
+.xans-myshop-boardlist .notice .subject { font-weight:bold; word-break:break-all; word-wrap:break-word; }
+.xans-myshop-boardpackage,
+form[id="boardSearchForm"] {max-width: 1441px; margin: 0 auto;}
+
+.xans-myshop-boardpackage {border-top: 2px solid #000; border-bottom: 1px solid #eee; font-size: 1rem;}
+.xans-myshop-boardpackage .ec-base-table table,
+.xans-myshop-boardpackage .gBlank10 {margin-top: 0;}
+.xans-myshop-boardpackage .ec-base-table.gBorder td {border-left: none;}
+.xans-myshop-boardpackage .ec-base-table.gBorder td:nth-child(2) {color: #3d81d6;}
+.xans-myshop-boardpackage .ec-base-table thead th {padding: 20px 0;}
+.xans-myshop-boardpackage .ec-base-table thead th:nth-child(3) {text-align: left; padding-left: 30px;}
+.xans-myshop-boardpackage .ec-base-table.typeList .center td.left {padding-left: 30px;}
+.xans-myshop-boardpackage .ec-base-table.typeList td {padding: 17px 0;}
+.xans-myshop-boardpackage .subject img {margin: 0 5px;}

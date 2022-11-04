@@ -1,0 +1,119 @@
+<div id="footer">
+    <div class="inner">
+        <!-- <span module="Layout_LogoBottom">
+            @css(/css/module/layout/logobottom.css)
+            <a href="/index.html"><img src="{$logo}" alt="{$mall_name}" /></a>
+        </span> -->
+
+        <div class="info">
+            <div class="company-info info-box">
+                <h3>ABOUT MCN-FIT</h3>
+                <ul class="info-list">
+                    <li><a href="/shopinfo/company.html">회사소개</a></li>
+                    <li><a href="/member/agreement.html">이용약관</a></li>
+                    <li><a href="/member/privacy.html">개인정보처리방침</a></li>
+                    <li><a href="/shopinfo/guide.html">이용안내</a></li>
+                </ul>
+            </div>
+            <div class="contact-wrap info-box">
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+                    <ul class="info-list">
+                        <li><a href="tel: 1566-8657">전화문의 1566-8657</a></li>
+                        <li>월~금 - 09:00 ~ 18:00</li>
+                        <li>점심시간 - 12:00 ~ 13:00</li>
+                        <li>토/일/공휴일 휴무</li>
+                    </ul>
+                </div>
+                <div class="bank-info">
+                    <h3>Bank info</h3>
+                    <ul class="info-list">
+                        <li>국민 634901-04-139078</li>
+                        <li>예금주 : 황재웅</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcn-site info-box">
+                <h3>MCN affiliates</h3>
+                <ul class="info-list">
+                    <a href="https://mcnsports.co.kr/" target='_blank'>
+                        <li>
+                            <span>MCN SPORTS</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </li>
+                    </a>
+                    <a href="https://mecenat.co.kr/" target='_blank'>
+                        <li>
+                            <span>MECENAT</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </li>
+                    </a>
+                    <a href="https://mcnfishing.com/" target='_blank'>
+                        <li>
+                            <span>MCN FISHING</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </li>
+                    </a>
+                    <a href="http://mcnorder.com/" target='_blank'>
+                        <li>
+                            <span>MCN B2B MALL</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </li>
+                    </a>
+                    <a href="https://mcncustom.com/board/free/list.html?board_no=6" target='_blank'>
+                        <li>
+                            <span>단체복 문의</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="community info-box">
+                <h3>Community</h3>
+                <ul class="info-list">
+                    <li><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+                    <li><a href="/board/gallery/list.html?board_no=8">이벤트</a></li>
+                    <li><a href="/board/product/list.html?board_no=4">제품후기</a></li>
+                    <li><a href="/board/free/list.html?board_no=6">문의하기</a></li>
+                    <li><a href="/board/free/list.html?board_no=3">자주 묻는 질문</a></li>
+                    <li><a href="/board/free/list.html?board_no=5">업무제휴</a></li>
+                </ul>
+            </div>
+            <div class="sns-wrap info-box">
+                <div class="sns">
+                    <h3>SNS</h3>
+                    <ul class="info-list">
+                        <li><a href="javascript:void(0)"><i class="xi-facebook"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="xi-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="my-page">
+                    <h3>MY page</h3>
+                    <ul class="info-list">
+                        <li><a href="/myshop/order/list.html">주문 내역 조회</a></li>
+                        <li><a href="https://parcel.epost.go.kr/auth.EpostLogin.parcel" target="_blank">배송조회</a></li>
+                        <li><a href="https://parcel.epost.go.kr/auth.EpostLogin.parcel" target="_blank"><img src="/web/img/mainserve/main_serve_postoffice.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div module="Layout_footer">
+        <div class="inner">
+            <!--@css(/css/module/layout/footer.css)-->
+            <p class="address">
+                <span>상호명 : {$company_name} </span> <span class="line">대표 : {$president_name}</span> <span class="line">통신판매업 : 신고 {$network_regno}</span> <span class="line">사업자 등록번호 : {$company_regno}</span> <span class="remove-bracket">{$biz_no_link}</span> <br>
+                <span>대표번호 : {$phone}</span> <span class="line">팩스 : {$fax}</span> <span class="line">주소 : {$mall_addr1} {$mall_addr2}</span>
+                <span class="{$cpo_email|display} line">CPO : <a href="mailto:{$cpo_email}">{$cpo_name}({$cpo_email})</a></span><br>
+                <span>본 사이트의 모든 이미지 저작권은 MCN에 있으며, 무단 복제를 금합니다.</span><br>
+                <span>Copyright &copy; 2022 {$mall_name}. All rights reserved.</span>            
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('.remove-bracket a').text('사업자정보확인').html();
+
+</script>

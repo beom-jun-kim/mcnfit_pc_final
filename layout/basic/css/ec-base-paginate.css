@@ -1,0 +1,23 @@
+.ec-base-paginate {margin:30px 0; text-align:center; font-size:0; line-height:0; transform: translateY(100%);}
+
+.ec-base-paginate a.next i,
+.ec-base-paginate a.last i {border-right: 1px solid #d7d5d5;}
+.ec-base-paginate i {font-size: 1rem; border: 1px solid #d7d5d5; width: 49px; height: 49px; line-height: 52px; border-right: none; color: #939393;}
+
+.ec-base-paginate.typeSub ol,
+.ec-base-paginate ol {display:inline-block; font-size:0; line-height:0; vertical-align:top; *display:inline; *zoom:1; *margin:0;}
+
+.ec-base-paginate.typeSub li,
+.ec-base-paginate li {display:inline-block; margin:0 0 0 -1px; border:1px solid #d7d5d5; border-right: none; font-size:18px; color:#757575; vertical-align:top; *display:inline; *zoom:1;}
+
+.ec-base-paginate.typeSub li:first-child,
+.ec-base-paginate li:first-child {margin-left:0;}
+
+.ec-base-paginate.typeSub li a,
+.ec-base-paginate li a {display:block; width:49px; height: 49px; font-weight:var(--font-weight); color:#939393; line-height:50px;}
+
+.ec-base-paginate.typeSub li a:hover,
+.ec-base-paginate li a:hover {background:#f0f2f2;}
+
+.ec-base-paginate.typeSub li a.this,
+.ec-base-paginate li a.this {color:var(--primary-color);}

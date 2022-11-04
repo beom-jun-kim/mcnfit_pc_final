@@ -1,0 +1,85 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="my_shop_cate">
+    <div class="guide_title">
+        <a href="/myshop/index.html"><strong>MY page</strong></a>
+        <div class="triangle"></div>
+        <ul class="my_shop_list">
+            <li></li>
+            <li>내 게시물 관리</li>
+        </ul>
+    </div>
+</div>
+
+<div module="myshop_boardlistSearch">
+    <!--@css(/css/module/myshop/boardlistSearch.css)-->
+    <div module="myshop_boardListHead">
+        <p>{$board_sort}</p>
+    </div>
+    <fieldset class="boardSearch">
+        <legend>게시물 검색</legend>
+        <p style="position: relative;">{$form.search_key} {$form.search} <a href="#none" class="btnEmFix" onclick="{$action_search}"><i class="xi-search"></i></a></p>
+    </fieldset>
+</div>
+
+<div module="myshop_BoardPackage">
+    <!--@css(/css/module/myshop/boardPackage.css)-->
+
+    <div class="ec-base-table typeList gBorder gBlank10" module="myshop_boardList">
+        <!--
+            $count = 10
+            $relation_post = yes
+        -->
+        <table border="1" summary="">
+        <caption>게시물 관리 목록</caption>
+        <colgroup module="board_listheader_1002">
+            <col style="width:120px;" />
+            <col style="width:120px;" />
+            <col style="width:auto;" />
+            <col style="width:150px;" />
+            <col style="width:150px;" />
+            <col style="width:120px;" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">번호</th>
+                <th scope="col">분류</th>
+                <th scope="col">제목</th>
+                <th scope="col">작성자</th>
+                <th scope="col">작성일</th>
+                <th scope="col">조회</th>
+            </tr>
+        </thead>
+        <tbody class="{$list_display|display} center">
+            <tr>
+                <td>{$no}</td>
+                <td><a href="{$link_board_list}">{$board_category}</a></td>
+                <td class="left subject">{$icon_re}{$icon_lock} <a href="{$board_read_url}">{$subject}</a> {$icon_new}{$icon_file}{$comment_count}</td>
+                <td>{$writer}</td>
+                <td><span class="txtNum">{$write_date}</span></td>
+                <td><span class="txtNum">{$hit_count}</span></td>
+            </tr>
+            <tr>
+                <td>{$no}</td>
+                <td><a href="{$link_board_list}">{$board_category}</a></td>
+                <td class="left subject">{$icon_re}{$icon_lock} <a href="{$board_read_url}">{$subject}</a> {$icon_new}{$icon_file}{$comment_count}</td>
+                <td>{$writer}</td>
+                <td><span class="txtNum">{$write_date}</span></td>
+                <td><span class="txtNum">{$hit_count}</span></td>
+            </tr>
+        </tbody>
+        </table>
+        <p class="message {$nodata_display|display}">게시물이 없습니다.</p>
+    </div>
+</div>
+
+<div module="myshop_boardlistPaging" class="ec-base-paginate">
+    <!--
+        $relation_post = yes
+    -->
+    <a href="{$param_prev}"><i class="fa-solid fa-angle-left"></i></a>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <a href="{$param_next}"><i class="fa-solid fa-angle-right" style="border-right: 1px solid #d7d5d5;;"></i></a>
+</div>

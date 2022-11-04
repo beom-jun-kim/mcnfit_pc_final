@@ -1,0 +1,9 @@
+.xans-member-findpasswdresult.ec-base-box { max-width: 545px; margin: 0 auto; padding-top:200px; font-family: 'NanumBarunGothic', sans-serif; font-weight: var(--font-weight); font-size: var(--big-font); }
+.xans-member-findpasswdresult.ec-base-box.typeThin h3.boxTitle { font-size: 2.8rem; text-align: center; padding-bottom: 30px; font-family: 'Noto Sans KR',sans-serif;}
+.xans-member-findpasswdresult { line-height:150%; text-align:center; }
+.xans-member-findpasswdresult .findPw { width:500px; margin:0 auto; }
+.xans-member-findpasswdresult .findPw .desc { margin:0 0 30px; line-height:25px; }
+
+.xans-member-findpasswdresult .findPw .ec-base-box { text-align:left;}
+.xans-member-findpasswdresult .findPw .copy {white-space: nowrap;}
+.xans-member-findpasswdresult .ec-base-button [class^='btn'][class*='Fix'].sizeM {width: 252.5px; height: 74px; line-height: 74px; padding: 0; font-weight: var(--font-weight); font-size: 1.2rem;}

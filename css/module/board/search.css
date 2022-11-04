@@ -1,0 +1,10 @@
+.xans-board-search { padding:25px 0 25px 0;}
+.xans-board-search .boardSearch { display:block; }
+.xans-board-search .boardSearch [class*='Fix'] {height: 35px; color: #000; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; right: -10px; background: none; font-size: var(--big-font);}
+.xans-board-search p.category:before { content:"상품분류"; }
+.xans-board-search .category select { margin:0 4px 0 0; width:150px; }
+.xans-board-search .category select#product_category_depth1 { margin:0 5px 0 10px; }
+.xans-board-search select {background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; background-size: 9px; margin:0 2px 0 0; width:80px; height: 35px; font-family: 'NanumBarunGothic', sans-serif; font-size: var(--small-font); font-weight: var(--font-weight); padding-left: 10px;}
+.xans-board-search input { width:200px; height: 33px;}
+.xans-board-search input[type=text] {height: 33px; padding: 0 0 0 5px;}
+.xans-board-search .boardSearch img { vertical-align:middle; }

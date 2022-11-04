@@ -1,0 +1,21 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="guide_title"><strong>Privacy</strong></div>
+
+<div module="mall_privacy">
+    <!--@css(/css/module/mall/privacy.css)-->
+    <div class="ec-base-box typeThinBg">
+        <strong class="date {$displayEnforce|display}">{$enforce_date}</strong>
+        <div class="agree">
+            <div class="titleArea">
+                <h1>개인정보처리방침</h1>
+                <div class="square"></div>
+            </div>
+            {$privacy_agreement}
+        </div>
+    </div>
+    <div class="ec-base-button {$displayBeforeEnforce|display}">
+        <span class="gRight">
+        	<a href="{$before_enforce_link}" class="btnLink" target="_blank">{$before_enforce_date}</a>
+        </span>
+    </div>
+</div>

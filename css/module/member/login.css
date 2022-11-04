@@ -1,0 +1,39 @@
+.xans-member-login.ec-base-box.typeThin { margin:0 0 20px; padding:0; }
+.xans-member-login .login { max-width: 1441px; margin: 0 auto; padding-top:168px; font-family: 'NanumBarunGothic', sans-serif; font-weight: var(--font-weight); font-size: var(--big-font);}
+.xans-member-login .login .boxTitle {font-size: 2.8rem; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000; font-family: 'Noto Sans KR',sans-serif;} 
+.xans-member-login .login fieldset {position: relative; max-width:545px;  margin:0 auto; padding-top: 70px;}
+.xans-member-login .login_flex_wrap {display: flex;}
+
+.xans-member-login .login fieldset .text_password,
+.xans-member-login .login fieldset .text_id {display: flex; align-items: center; justify-content: flex-end;  margin:0 0 8px;}
+
+.xans-member-login .login fieldset .id,
+.xans-member-login .login fieldset .password { width:465px; padding-left: 15px;}
+
+.xans-member-login .login fieldset .id span,
+.xans-member-login .login fieldset .password span { height:32px; line-height:32px; padding:0 0 0 8px; }
+
+.xans-member-login .login fieldset input[type=text],
+.xans-member-login .login fieldset input[type=password] { width:95%; height:45px; border: 1px solid #d9d9d9; padding-left: 10px;}
+.xans-member-login .login fieldset .security {position: absolute; right: 0; width: 604px; padding:0 0 0 5px; margin:30px 0; display: flex; justify-content: space-between;}
+.xans-member-login .login fieldset .security img { vertical-align:middle; transform: scale(1.3); margin: -3px 3px 0 0;}
+.xans-member-login .login fieldset > a { display:block; }
+
+.xans-member-login .login fieldset li:last-child:after {border:none;}
+.xans-member-login .login fieldset .link { position:relative; margin:25px 9px 0 0; padding:25px 0 0 0; border-top:1px solid #e9e9e9; }
+.xans-member-login .login fieldset .link a { position:absolute; top:25px; right:0; }
+.xans-member-login .login fieldset .snsArea li { margin:7px 9px 0 0; padding:0; background:none; }
+.xans-member-login .login fieldset .snsArea li:after { content:none; }
+.xans-member-login .login fieldset #noMemberWrap { border-top:0; margin-top:0; }
+.xans-member-login label[for="member_check_save_id0"] {margin-right: 10px;}
+
+.xans-member-login .btnLogin {width: 140px; height: 90px; color: #fff; background: var(--second-color); line-height: 90px;}
+
+.xans-member-login .ectBtmWrap {text-align:center;}
+.xans-member-login .ectBtmWrap > li {display:inline-block;}
+.xans-member-login .ectBtmWrap > li:last-child {margin-left: 2px;}
+.xans-member-login .ectBtmWrap > li > a { border:1px solid #ccc; padding:12px 27px;}
+
+.member_join_wrap {display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; background: #f5f5f5; margin-top: 130px; height: 320px;}
+.member_join {line-height: 35px;}
+.member_join_wrap a {color: #fff; width: 215.09px; height: 64.53px; line-height: 64.53px; background: var(--primary-color); margin-top: 20px; text-align: center;}

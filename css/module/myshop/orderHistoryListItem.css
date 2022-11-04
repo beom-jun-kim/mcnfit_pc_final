@@ -1,0 +1,17 @@
+.xans-myshop-orderhistorylistitem .name,
+.xans-myshop-orderhistorylistitem.ec-base-table {font-weight: normal;}
+.xans-myshop-orderhistorylistitem.ec-base-table {border-bottom: 2px solid #000;}
+.xans-myshop-orderhistorylistitem.ec-base-table th {font-weight: var(--font-weight); border-top: 2px solid #000; padding: 30px 0; border-bottom: 1px solid #dfdfdf;}
+.xans-myshop-orderhistorylistitem.ec-base-table td.number { letter-spacing:-1px; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.thumb img { width:100%; }
+.xans-myshop-orderhistorylistitem.ec-base-table .name .ec-set-product-name { display:block; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.product ul.option > li > strong { display:block; color:#353535; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.number [class^="btn"],
+.xans-myshop-orderhistorylistitem.ec-base-table td.state [class^="btn"] { margin:1px 0; }
+.xans-myshop-orderhistorylistitem.ec-base-table.typeList .center td.left {padding-left: 20px;}
+.xans-myshop-orderhistorylistitem.ec-base-table td.product div.option,
+.xans-myshop-orderhistorylistitem.ec-base-table .name a {position: relative; top: 50px;}
+.xans-myshop-orderhistorylistitem.ec-base-table .center td {padding: 30px 0;}
+.xans-myshop-orderhistorylistitem.ec-base-table.typeList .center td.right {padding-right: 25px;}
+.xans-myshop-orderhistorylistitem.ec-base-table.typeList .center td.state {padding-left: 10px;}
+.xans-myshop-orderhistorylistitem.ec-base-table .message {border: none;}

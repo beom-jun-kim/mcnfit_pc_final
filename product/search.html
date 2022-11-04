@@ -1,0 +1,140 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="search_title">
+    <h2>상품검색</h2>
+</div>
+
+<div module="search_form">
+    <!--@css(/css/module/product/search_form.css)-->
+    <div class="ec-base-box searchbox">
+        <!-- <fieldset>
+            <legend>상품 검색</legend>
+            <div class="item"><strong>상품분류</strong> {$form.category_no}</div>
+            <div class="item">
+                <strong>검색조건</strong>
+                {$form.search_type}
+                {$form.keyword}
+            </div>
+            <div class="popular" id="{$except_keyword_wrap_id}" style="display:none">
+                <strong>제외검색어</strong>
+                {$form.exceptkeyword}
+            </div>
+            <div class="popular" module="search_hotkeyword">
+                <strong>인기검색어</strong>
+                <p>
+                    <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+                    <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+                </p>
+            </div>
+            <div class="item"><strong>판매가격대</strong> {$form.product_price1} ~ {$form.product_price2}</div>
+            <div class="item"><strong>검색정렬기준</strong> {$form.order_by}</div>
+            <p class="button"><button type="submit" class="btnSubmitFix sizeM">검색</button></p>
+        </fieldset> -->
+        <div class="search_bar">
+            <div module="Layout_SearchHeader">
+                <div class="topSearch">
+                    {$form.keyword}
+                    <button type="button" class="search_btn" onclick="{$action_search_submit}"><i class="xi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="searchResult">
+        <p class="record">상품 검색 결과<strong> {$total_count}</strong></p>
+        <select class="listType" module="search_Orderby">
+            <option class="btn_order" rel='{$rel}' style='{$style}' >{$sort_name}</option>
+            <option class="btn_order" rel='{$rel}' style='{$style}' >{$sort_name}</option>
+        </ul>
+    </div>
+
+    <div class="noData {$search_fail_display|display}">
+        <strong class="warning">검색결과가 없습니다.</strong>
+        <strong>정확한 검색어 인지 확인하시고 다시 검색해 주세요.</strong>
+        <ul>
+            <li>띄어쓰기를 확인해 보세요.</li>
+        </ul>
+    </div>
+</div>
+
+<div module="Search_Result" class="ec-base-product">
+    <!--
+        $count = 13
+    -->
+    <ul class="prdList grid4">
+        <li id="anchorBoxId_{$product_no}">
+            <div class="thumbnail">
+                <div class="prdImg">
+                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" /><span module="Search_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    <!-- <span class="wish">{$list_wish_icon}</span> -->
+                </div>
+                <div class="icon">
+                    <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+                    <div class="button">
+                        <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                    </div>
+                </div>
+                <div class="option_wrap">
+                    <div class="option_quick">{$zoom_icon}</div>
+                    <div class="option_basket">{$basket_icon}</div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="search_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="anchorBoxId_{$product_no}">
+            <div class="thumbnail">
+                <div class="prdImg">
+                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" /><span module="Search_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    <!-- <span class="wish">{$list_wish_icon}</span> -->
+                </div>
+                <div class="icon">
+                    <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon}</div>
+                    <div class="button">
+                        <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                    </div>
+                </div>
+                <div class="option_wrap">
+                    <div class="option_quick">{$zoom_icon}</div>
+                    <div class="option_basket">{$basket_icon}</div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="search_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div module="search_paging" class="ec-base-paginate">
+    <a href="{$param_first}" class="first"><i class="fa-solid fa-angles-left"></i></a>
+    <a href="{$param_before}"><i class="fa-solid fa-angle-left"></i></a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}" class="next"><i class="fa-solid fa-angle-right"></i></a>
+    <a href="{$param_last}" class="last"><i class="fa-solid fa-angles-right"></i></a>
+</div>
+
+<script>
+    // css 변경(font-size) - 
+    $('.xans-search-result.ec-base-product strong.name a span:nth-child(2)').css({'font-size': 'var(--small-font)'});
+    $('.xans-search-result.ec-base-product .spec li.xans-record- span').css('font-size','var(--big-font)');
+</script>

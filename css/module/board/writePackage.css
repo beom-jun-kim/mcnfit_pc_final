@@ -1,0 +1,44 @@
+/* 게시판 전체 공통 */
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+/* write */
+.xans-board-write .ec-base-table tr.agree td textarea { width:560px; height:140px; margin:0 0 10px; }
+.xans-board-write .ec-base-table #subject { width:390px; height: 33px;}
+.xans-board-write .ec-base-table #captcha { width:160px; }
+.xans-board-write .ec-base-table #ucc_width, .xans-board-write table #ucc_height { width:40px; margin-left:4px; }
+.xans-board-write .ec-base-table #email1 { margin:0 4px 0 0; }
+.xans-board-write .ec-base-table #email2 { margin:0 4px; }
+.xans-board-write .ec-base-button { margin:30px 0 0; }
+
+/* write - 상품 */
+.xans-board-write .thumbnail {font-weight:var(--font-weight); display: flex;}
+.xans-board-write .thumbnail .price {color:#b0b0b0; margin: 7px 0;}
+.xans-board-write .thumbnail .desc {margin: 20px 0 0 20px;}
+.xans-board-write .thumbnail img {cursor: pointer;}
+.xans-board-write .thumbnail #iPrdView {position: relative;}
+.xans-board-write .thumbnail #aPrdLink {width: 151px; height: 40px; position: absolute; top: 0; left: 0; border: 1px solid #dfdfdf; line-height: 40px; text-align: center;}
+
+/* 추가한 css */
+.xans-board-write {max-width: 1441px; margin: 0 auto;}
+.xans-board-write .ec-base-table table {border: none; border-top: 2px solid #000; margin-top: 50px;}
+.xans-board-write .ec-base-table tbody th {border-right: none;}
+.xans-board-write .password th,
+.xans-board-write .password tr,
+.xans-board-write .write_padding2 {padding: 15px 0 15px 20px; font-weight: normal; font-size: var(--small-font);}
+.xans-board-write .ec-base-table tbody .write_padding {padding: 30px 0 30px 20px; font-weight: var(--font-weight);}
+.xans-board-write .ec-base-table tbody .write_padding3 {padding: 15px 0 15px 20px;}
+.xans-board-write input[id="notice0"] {margin-left: 10px;}
+.xans-board-write .information,
+.xans-board-write [class^='btnNormal'], a[class^='btnNormal'],
+.xans-board-write .ec-base-table table,
+.xans-board-write .ec-base-button [class^='btn'][class*='Fix'].sizeS {font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem;}
+.xans-board-write tbody.write_font {border-bottom: 1px solid #dfdfdf;}
+.xans-board-write[class^='btnNormal'], a[class^='btnNormal'],
+.xans-board-write .ec-base-button [class^='btn'][class*='Fix'].sizeS {width: 180px; height: 55px; line-height: 55px; padding: 0; font-weight: var(--font-weight); border: 1px solid #dfdfdf;}
+.xans-board-write input[name="attach_file[]"] {font-family: 'NanumBarunGothic', sans-serif; }
+
+.xans-board-write-4 input[id="notice0"],
+.xans-board-write-4 label[for="notice0"],
+.xans-board-write-4 input[id="is_post0"],
+.xans-board-write-4 label[for="is_post0"] {display: none;}
+

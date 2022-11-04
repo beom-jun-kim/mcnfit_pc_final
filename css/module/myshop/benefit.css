@@ -1,0 +1,15 @@
+/* .xans-myshop-asyncbenefit { margin:0 0 20px;}
+.xans-myshop-asyncbenefit .description { min-height:70px; }
+.xans-myshop-asyncbenefit .ec-base-box.typeThinBg { margin-top:-1px; padding-left:110px; }
+.xans-myshop-asyncbenefit .invite > strong { display:block; }
+.xans-myshop-asyncbenefit .invite .copy { margin:8px 0 0; }
+.xans-myshop-asyncbenefit .invite #reco_url { width:439px; }
+.xans-myshop-asyncbenefit .invite ul { margin:8px 0 0; font-size:11px; line-height:1.25; color:#757575; }
+.xans-myshop-asyncbenefit .invite ul li { margin:3px 0 0; } */
+
+.xans-myshop-asyncbenefit .ec-base-box.typeMember .information {padding: 30px 0 70px; border-bottom: 1px solid #dbdbdb;}
+.xans-myshop-asyncbenefit .txtInfo,
+.xans-myshop-asyncbenefit .ec-base-box.typeMember .information .description {font-size: var(--small-font); font-family: 'NanumBarunGothic', sans-serif; color: #000; line-height: 25px;}
+.xans-myshop-asyncbenefit .ec-base-box.typeMember .information .description {border: none; padding: 0;}
+.xans-myshop-asyncbenefit .sAutoGradeDisplay {padding-left: 15px;}
+.xans-myshop-asyncbenefit .txtInfo {padding-left: 18px;}

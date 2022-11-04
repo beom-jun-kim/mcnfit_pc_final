@@ -1,0 +1,46 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title { min-height:30px; margin:10px 0 20px; border-bottom:1px solid #e8e8e8; }
+.xans-board-title .title h2 { display:inline-block; padding:0 0 0 12px; color:#2e2e2e; font-size:16px; *display:inline; *zoom:1; background:url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat; }
+.xans-board-title .title p { display:inline-block; margin:0 0 0 6px; padding:0 0 0 10px; color:#939393; vertical-align:bottom; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 0; *display:inline; *zoom:1; }
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+/* modify */
+.xans-board-modify .ec-base-table tr.agree td textarea { width:560px; height:140px; margin:0 0 10px; }
+.xans-board-modify .ec-base-table #subject { width:390px; height: 33px;}
+.xans-board-modify .ec-base-table #captcha { width:160px; }
+.xans-board-modify .ec-base-table #ucc_width, .xans-board-modify .ec-base-table #ucc_height { width:40px; margin-left:4px; }
+.xans-board-modify .ec-base-table #email1 { margin:0 4px 0 0; }
+.xans-board-modify .ec-base-table #email2 { margin:0 4px; }
+.xans-board-modify .ec-base-button { margin:30px 0 0; }
+
+/* modify - 상품 */
+.xans-board-modify .ec-base-box.typeProduct { margin:0 0 20px; }
+.xans-board-modify .information h3 { margin:17px 0 5px; font-size:14px; color:#2e2e2e; }
+.xans-board-modify .information .price { font-size:14px; font-weight:bold; color:#008bcc; }
+/* .xans-board-modify .information .button { margin:19px 0 0 0; padding:13px 0 0 0; border-top:1px solid #e8e8e8; } */
+
+
+.xans-board-modify {max-width: 1441px; margin: 0 auto;}
+.xans-board-modify .ec-base-table table {border: none; border-top: 2px solid #000; margin-top: 50px;}
+.xans-board-modify .ec-base-table tbody th {border-right: none;}
+.xans-board-modify .write_padding2 {padding: 15px 0 15px 20px;}
+.xans-board-modify .ec-base-table tbody .write_padding {padding: 30px 0 30px 20px; font-weight: var(--font-weight);}
+.xans-board-modify .ec-base-table tbody .write_padding3 {padding: 15px 0 15px 20px;}
+.xans-board-modify input[id="notice0"] {margin-left: 10px;}
+.xans-board-modify .information,
+.xans-board-modify [class^='btnNormal'], a[class^='btnNormal'],
+.xans-board-modify .ec-base-table table,
+.xans-board-modify input,
+.xans-board-modify .ec-base-button [class^='btn'][class*='Fix'].sizeS {font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem;}
+.xans-board-modify tbody.write_font {border-bottom: 1px solid #dfdfdf;}
+.xans-board-modify[class^='btnNormal'], a[class^='btnNormal'],
+.xans-board-modify .ec-base-button [class^='btn'][class*='Fix'].sizeS {width: 180px; height: 55px; line-height: 55px; padding: 0; font-weight: var(--font-weight); border: 1px solid #dfdfdf;}
+.xans-board-modify .ec-base-button .btnEmFix {background: var(--second-color); color: #fff;}
+
+
+.xans-board-modify .thumbnail {font-weight:var(--font-weight); display: flex;}
+.xans-board-modify .thumbnail .price {color:#b0b0b0; margin: 7px 0;}
+.xans-board-modify .thumbnail .desc {margin: 20px 0 0 20px;}
+.xans-board-modify .thumbnail img {cursor: pointer;}
+.xans-board-modify .thumbnail #iPrdView {position: relative;}
+.xans-board-modify .thumbnail #aPrdLink {width: 151px; height: 40px; position: absolute; top: 0; left: 0; border: 1px solid #dfdfdf; line-height: 40px; text-align: center;}

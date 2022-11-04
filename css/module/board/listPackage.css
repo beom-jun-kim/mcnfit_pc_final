@@ -1,0 +1,75 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title { min-height:30px; margin:10px 0 20px; border-bottom:1px solid #e8e8e8; }
+.xans-board-title .title h2 { display:inline-block; padding:0 0 0 12px; color:#2e2e2e; font-size:16px; *display:inline; *zoom:1; background:url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat; }
+.xans-board-title .title p { display:inline-block; margin:0 0 0 6px; padding:0 0 0 10px; color:#939393; vertical-align:bottom; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 0; *display:inline; *zoom:1; }
+.xans-board-title p.imgArea { margin:0 0 20px; }
+.xans-board-listpackage .boardSort { float:left; margin:0 0 10px; }
+
+/* 갤러리형 탭메뉴 */
+ul.xans-board-listheader { text-align:right; margin:0 0 10px; }
+ul.xans-board-listheader li { display:inline; }
+
+/* list */
+.xans-board-listpackage { margin:0 0 10px; font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem;}
+.xans-board-listpackage .ec-base-table { clear:both; }
+.xans-board-listpackage .ec-base-table .subject a {margin: 0 10px 0 -10px;}
+.xans-board-listpackage .ec-base-table .subject img.ec-common-rwd-image { margin: 0 8px 0 0;}
+.xans-board-listpackage .ec-base-table .thumb a { overflow:hidden;}
+.xans-board-listpackage .ec-base-table .thumb img {float:left; }
+.xans-board-listpackage .ec-base-table .thumb span { float:left; width:80px; padding:0 0 0 8px; text-align:left; }
+.xans-board-listpackage .xans-board-listheader th {font-weight: var(--font-weight);}
+
+/* 상품후기 아코디언형 */
+.xans-board-listpackage #content_view td { padding:9px 10px 20px; background:#f6f7f9; text-align:left; word-break:break-all; white-space:pre-wrap; }
+
+
+/* 추가한 css */
+/* .fun_bun_flex, */
+.xans-board-listpackage,
+.xans-board-paging .ec-base-paginate {max-width: 1441px; margin: 0 auto;}
+.xans-board-listpackage .xans-board-search  fieldset {text-align: right;}
+.xans-board-listpackage .ec-base-table.gBorder td {border: none; border-bottom: 1px solid;}
+.xans-board-listpackage .ec-base-table table {border: none; margin: 0; }
+.xans-board-listpackage .ec-base-table thead th {background: none; border-top: 2px solid #000; border-bottom: 1px solid #dfdfdf; border-left: none; padding: 20px 0;}
+.xans-board-listpackage .ec-base-table.typeList td {padding: 17px 0;}
+.xans-board-listpackage .ec-base-table.typeList .center td.left {padding-left: 55px;}
+.xans-board-listpackage tr .subject strong {background: url(/web/img/list/notice_icon.png) no-repeat 0; padding-left: 35px;}
+.xans-board-listpackage tr .subject .notice_icon2 {background: url(/web/img/list/notice_icon2.jpg) no-repeat 0; padding-left: 35px; display: inline-block;}
+.xans-board-listpackage .ec-base-table .message {border: none;}
+.xans-board-listpackage .ec-base-button {padding: 20px 0 10px;}
+
+/* 추가한 css */
+.xans-board-listpackage .board_product_span,
+.xans-board-listpackage .board_product_img {display: block; font-size: var(--small-font);}
+.xans-board-listpackage .board_product_img {margin-left: -4px;}
+.xans-board-listpackage .board_product_lh {line-height: 60px;}
+/* .xans-board-listpackage .fun_bun_flex {display: flex; align-items: center; justify-content: space-between;} */
+.xans-board-listpackage .xans-board-buttonlist [class^='btn'][class*='Fix'].sizeS {width: 180px; height: 50px; line-height: 50px; padding: 0; font-size: 1rem; font-weight: var(--font-weight); font-family: 'NanumBarunGothic', sans-serif; border: 1px solid #dfdfdf;}
+/* .xans-board-listpackage .xans-board-buttonlist {order: 2;} */
+
+/* 자주 묻는 질문 css 변환 */
+/* .xans-board-listpackage tr .subject .notice_icon2.active {background: none;} */
+.xans-board-listpackage .ec-base-table tr td:nth-last-child(-n+5).active,
+.xans-board-listpackage .ec-base-table tr th:nth-last-child(-n+5).active {font-size: 0;}
+.xans-board-listpackage .ec-base-table td.active {font-weight: var(--font-weight);}
+.xans-board-listpackage .ec-base-table tr th:nth-child(3).active {padding-right: 13rem;}
+.xans-board-listpackage .ec-base-table.typeList .center td.left.active {padding-left: 50px;}
+
+/* 문의하기 css 변환 */
+.xans-board-listpackage .ec-base-table .subject a.active {margin-left: 10px;}
+.xans-board-listpackage tr .subject .notice_icon2.active {background: none; padding: 0;}
+.xans-board-listpackage .board_product_span.active,
+.xans-board-listpackage img.board_product_img.active {display: none;}
+
+/* 자주 묻는 질문 css 변환 */
+.xans-board-listpackage .ec-base-table .subject .detail {display: none; margin: 50px 0 0 10px; font-weight: normal; color: #000;}
+.xans-board-listpackage .ec-base-table .subject .detail.active {display: block;}
+
+
+/* 관리자 전용메뉴 */
+.xans-board-listpackage form {position: relative;}
+.xans-board-function {font-size:var(--small-font); font-family: 'NanumBarunGothic', sans-serif; position: absolute; top: 30px;} 
+.xans-board-function select {background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; width: 130px; height: 33px; padding-left: 15px; outline: none; cursor: pointer;}
+.xans-board-function [class^='btnNormal'], a[class^='btnNormal'] {background: var(--second-color); color: var(--white-color); height: 33px; line-height: 30px; border: none; margin-left: 5px;}
+.xans-board-function a:last-child {margin-left: 0;}
+.xans-board-function img {display: none;}

@@ -1,0 +1,9 @@
+.xans-product-normalmenu .function {text-align:right; padding:30px 27px 10px;}
+.xans-product-listnormal.ec-base-product {margin: 0;}
+.xans-product-listnormal ul.prdList {display: flex; flex-wrap: wrap;}
+#Product_ListMenu #selArray {background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; width: 130px; height: 50px; font-size: 1rem; padding-left: 15px; font-weight: var(--font-weight); outline: none; cursor: pointer; font-family: 'NanumBarunGothic', sans-serif;}
+.xans-product-normalpackage {max-width: 1820px; margin: 0 auto;}
+
+.ec-base-product .prdList .thumbnail:hover .option_wrap {visibility: visible; opacity: 1;}
+.option_wrap {position: absolute; bottom: 100px; right: 1px; display: flex; cursor: pointer; visibility: hidden; opacity: 0; transition: 500ms;}
+.option_wrap img {max-width: 100%;}

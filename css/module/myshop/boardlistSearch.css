@@ -1,0 +1,8 @@
+.xans-myshop-boardlistsearch { padding:25px 0 25px;}
+.xans-myshop-boardlistsearch #search { width:162px; }
+.xans-myshop-boardlistsearch .boardSearch { display:block; }
+.xans-myshop-boardlistsearch select {background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; background-size: 9px; margin: 0 2px 0 0; width: 80px; height: 35px; font-size: var(--small-font); padding-left: 10px;}
+.xans-myshop-boardlistsearch select[id="board_sort"] {width: 110px;}
+.xans-myshop-boardlistsearch input[type=text] {height: 33px; padding: 0 0 0 5px;}
+.xans-myshop-boardlistsearch .boardSearch [class*='Fix'] {height: 35px; color: #000; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; right: -10px; background: none; font-size: var(--big-font);}
+.xans-myshop-boardlistsearch {display: flex; justify-content: space-between;}

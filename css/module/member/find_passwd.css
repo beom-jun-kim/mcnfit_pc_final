@@ -1,0 +1,25 @@
+.xans-member-findpasswd .findPw { max-width: 1441px; margin: 0 auto; padding-top:168px; font-family: 'NanumBarunGothic', sans-serif; font-weight: var(--font-weight); font-size: var(--big-font); }
+.xans-member-findpasswd .findPw .boxTitle {font-size: 2.8rem; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000; font-family: 'Noto Sans KR',sans-serif;}
+.xans-member-findpasswd .findPw fieldset { position: relative; max-width:545px;  margin:0 auto; padding-top: 70px; }
+.xans-member-findpasswd .findPw select { width:190px; height:51px; padding:0 4px; background: url(/web/img/detail/select_arrow.png) no-repeat 90%; appearance: none; font-size: 1rem; padding-left: 15px; outline: none; cursor: pointer; font-family: 'NanumBarunGothic',sans-serif; }
+.xans-member-findpasswd .findPw .ec-base-desc li { margin:8px 0 0; }
+.xans-member-findpasswd .findPw strong {display: inline-block; padding: 0 20px 0 0; width: 125px; text-align: right;}
+
+.xans-member-findpasswd .findPw input[type=text],
+.xans-member-findpasswd .findPw input[type=password] {width: 391.5px; height: 45px;}
+.xans-member-findpasswd .findPw input[type=radio], 
+.xans-member-findpasswd .findPw input[type=checkbox] {accent-color: #000; margin-right: 5px;}
+
+.xans-member-findpasswd .findPw #mobile1,
+.xans-member-findpasswd .findPw #mobile2,
+.xans-member-findpasswd .findPw #mobile3 { width:112px; }
+
+.xans-member-findpasswd .findPw #ipin_view { height:72px; }
+.xans-member-findpasswd .findPw input[type=radio] + label,
+.xans-member-findpasswd .findPw input[type=checkbox] + label { margin:0 15px 0 2px; }
+.xans-member-findpasswd .findPw .ec-base-desc dt,
+.xans-member-findpasswd .findPw .ec-base-desc .term { font-weight: var(--font-weight); }
+.xans-member-findpasswd .findPw .ec-base-desc .term { line-height: 51px; }
+.xans-member-findpasswd .findPw .ec-base-desc .desc .check { margin:15px 0 15px 20px; }
+.xans-member-findpasswd .findPw .ec-base-button { padding: 40px 0 10px; width: 40%;}
+.xans-member-findpasswd .findPw .ec-base-button[class*="gColumn"] [class^='btn'] { height: 74px; line-height: 74px; padding: 0; font-weight: var(--font-weight); font-size: 1.2rem;}

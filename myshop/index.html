@@ -1,0 +1,267 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="guide_title">
+    <a href="/myshop/index.html"><strong>MY page</strong></a>
+</div>
+
+<div module="layout_logincheck">
+<!--
+    $url = /member/login.html
+-->
+</div>
+
+<div class="my_shop_inner">
+    <div id="myshopMain" module="myshop_main">
+        <!--@css(/css/module/myshop/main.css)-->
+        <ul>
+            <li class="shopMain order">
+                <a href="/myshop/order/list.html">
+                    <span>주문내역 조회</span>
+                </a>
+            </li>
+            <li class="shopMain profile">
+                <a href="/member/modify.html">
+                    <span>회원 정보</span>
+                </a>
+            </li>
+            <li class="shopMain address">
+                <a href="/myshop/addr/list.html">
+                    <span class="text_pad">배송 주소록</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div module="myshop_orderstate">
+        <!--@css(/css/module/myshop/orderState.css)-->
+        <div class="state" module="myshop_bankbook">
+            <ul class="order">
+                <li class="shopMain lebel">
+                    <a href="javascript:void(0)" style="cursor: default;">
+                        <div class="shopMain_desc">
+                            <p>회원등급</p>
+                            <span module="myshop_asyncbenefit">{$group_name}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="shopMain mileage">
+                    <a href="/myshop/mileage/historyList.html">
+                        <div class="shopMain_desc">
+                            <p>{$mileage_name}</p>
+                            <span>{$avail_mileage}</span>
+                        </div>
+                    </a>
+                </li>            
+                <li class="shopMain coupon">
+                    <a href="/myshop/coupon/coupon.html">
+                        <div class="shopMain_desc">
+                            <p>쿠폰</p>
+                            <span>{$coupon_cnt}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="shopMain wishlist"  module="Layout_orderBasketcount">
+                    <a href="/order/basket.html">
+                        <div class="shopMain_desc">
+                            <p>장바구니</p>
+                            <!-- <span>dfdfdf</span> -->
+                            <span>{$basket_count}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="shopMain board">
+                    <a href="/myshop/board_list.html?board_no=&page=1&board_sort=C&board_sort=C&search_key=subject&search=">
+                        <div class="shopMain_desc">
+                            <p>내 게시물 관리</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <ul class="order">
+                <li class="deliver">
+                    <a href="{$shppiedBeforeUrl}">
+                        <div class="deliver_desc">
+                            <p>입금전</p>
+                            <span>{$shppiedBeforeCount}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="deliver">
+                    <a href="{$shppiedStandbyUrl}">
+                        <div class="deliver_desc">
+                            <p>배송준비중</p>
+                            <span>{$shppiedStandbyCount}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="deliver">
+                    <a href="{$shppiedBeginUrl}">
+                        <div class="deliver_desc">
+                            <p>배송중</p>
+                            <span>{$shppiedBeginCount}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="deliver">
+                    <a href="{$shppiedComplateUrl}">
+                        <div class="deliver_desc">
+                            <p>배송완료</p>
+                            <span>{$shppiedComplateCount}</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="deliver">
+                    <div class="deliver_desc">
+                        <a href="{$orderCancelUrl}" class="count">취소&nbsp;&nbsp;:&nbsp;&nbsp;{$orderCancelCount}</a>
+                        <a href="{$orderExchangeUrl}" class="count">교환&nbsp;&nbsp;:&nbsp;&nbsp;{$orderExchangeCount}</a>
+                        <a href="{$orderReturnUrl}" class="count">반품&nbsp;&nbsp;:&nbsp;&nbsp;{$orderReturnCount}</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div module="myshop_asyncbenefit">
+        <!--@css(/css/module/myshop/benefit.css)-->
+        <div class="ec-base-box typeMember gMessage {$display_benefit|display}">
+            <div class="information">
+                <div class="description">
+                    <span>※ 저희 쇼핑몰을 이용해 주셔서 감사합니다. {$member_name} 님은 <strong>[<span class="{$displayGroupIcon|display}"><img src="{$group_icon}" alt="" class="{$group_icon_tag_class}" /></span>{$group_name}]</strong> 회원이십니다.</span>
+                    <p class="{$display_no_benefit|display} {$display_no_benefit_class}">{$dc_pay} {$dc_min_price} 구매시 {$dc_price}{$dc_type}을 {$use_dc} 받으실 수 있습니다. {$dc_max_percent}</p>
+                    <p class="{$display_with_all|display} {$display_with_all_class}">{$dc_pay} {$dc_min_price_mileage} 구매시 {$dc_price_mileage}{$dc_type_mileage}을 {$use_dc_mileage} 받으실 수 있습니다. {$dc_max_mileage_percent}</p>
+                    <div class="{$bGradeAutoDisplay|display}" id="{$sGradeAutoDisplayId}">
+                        <p class="{$bChangeTypePrice|display} {$sAutoGradeDisplay}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 까지 남은 구매금액은 <strong>{$sGradeIncreasePrice}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매금액 : {$sPeriodOrderPrice})</p>
+                        <p class="{$bChangeTypeCount|display} {$sAutoGradeDisplay}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 까지 남은 구매건수는 <strong>{$sGradeIncreaseCount}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매건수 : {$sPeriodOrderCount})</p>
+                        <p class="{$bChangeTypePriceAndCount|display} {$sAutoGradeDisplay}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 까지 남은 구매금액은 <strong>{$sGradeIncreasePrice}</strong>, 남은 구매건수는 <strong>{$sGradeIncreaseCount}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매금액 : {$sPeriodOrderPrice}｜구매건수 : {$sPeriodOrderCount})</p>
+                        <p class="{$bChangeTypePriceOrCount|display} {$sAutoGradeDisplay}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 까지 남은 구매금액은 <strong>{$sGradeIncreasePrice}</strong>, 또는 남은 구매건수 <strong>{$sGradeIncreaseCount}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매금액 : {$sPeriodOrderPrice}｜구매건수 : {$sPeriodOrderCount})</p>
+                        <p class="{$bChangeMaxTypePrice|display}" id="{$sChangeMaxTypePriceId}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 등급을 유지하기 위해 남은 구매금액은 <strong>{$sGradeIncreasePrice}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매금액 : {$sPeriodOrderPrice})</p>
+                        <p class="{$bChangeMaxTypeCount|display}" id="{$sChangeMaxTypeCountId}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 등급을 유지하기 위해 남은 구매건수는 <strong>{$sGradeIncreaseCount}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매건수 : {$sPeriodOrderCount})</p>
+                        <p class="{$bChangeMaxTypePriceAndCount|display}" id="{$sChangeMaxTypePriceAndCountId}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 등급을 유지하기 위해 남은 구매금액은 <strong>{$sGradeIncreasePrice}</strong>, 남은 구매건수는 <strong>{$sGradeIncreaseCount}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매금액 : {$sPeriodOrderPrice}｜구매건수 : {$sPeriodOrderCount})</p>
+                        <p class="{$bChangeMaxTypePriceOrCount|display}" id="{$sChangeMaxTypePriceOrCountId}"><strong>[<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span>{$sNextGrade}]</strong> 등급을 유지하기 위해 남은 구매금액은 <strong>{$sGradeIncreasePrice}</strong>, 또는 남은 구매건수 <strong>{$sGradeIncreaseCount}</strong> 입니다. ({$sApplyPeriod} {$sGradePeriod} 구매금액 : {$sPeriodOrderPrice}｜구매건수 : {$sPeriodOrderCount})</p>
+                        <p class="txtInfo txt11">승급 기준에 따른 예상 금액이므로 총주문 금액과 다를 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="invite ec-base-box typeThinBg gMerge {$display_reco|display}">
+            <strong class="txtEm">주소를 복사하여 친구를 쇼핑몰에 초대해보세요.</strong>
+            <p class="copy">
+                <input type="text" id="{$reco_url}" value="//{$shop_domain}/?reco_id={$member_id}" readonly="readonly" />
+                <a href="#none" onclick="{$copy_func}" class="btnSubmit">주소복사</a>
+            </p>
+            <ul>
+                <li>- 친구에게는 가입즉시 {$reco_mileage2}의 {$mileage_name}이 지급됩니다.</li>
+                <li>- {$reco_mileage}</li>
+            </ul> -->
+        </div>
+    </div>
+    
+    <div module="product_recentlist">
+        <!--@css(/css/module/product/recentlist.css)-->
+        <!--
+            $count = 12
+        -->
+        <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+        <h3>최근 본 상품</h3>
+        <ul module="product_listitem">
+            <li>
+                <div class="description">
+                    <p class="prdImg"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></p>
+                    <!-- <strong class="prdName"><a href="/product/detail.html{$param}">{$product_name}</a></strong>
+                    <ul module="product_setproduct" class="item">
+                        <li>{$product_name}</li>
+                        <li>{$product_name}</li>
+                    </ul>
+                    <p class="price">{$price}</p> -->
+                </div>
+                <!-- <ul class="option" module="product_mainoption">
+                    <li><span>{$option_name}</span> {$form.option}</li>
+                    <li><span>{$option_name}</span> {$form.option}</li>
+                </ul>
+                <ul class="option" module="product_addoption">
+                    <li><span>{$option_name}</span> {$form.add_option}</li>
+                    <li><span>{$option_name}</span> {$form.add_option}</li>
+                </ul> -->
+                <!-- <div class="btnArea typeFull">
+                    <span class="gLeft">
+                        <button type="button" class="btnNormal {$class_del}" href="#none" rel="{$rel_del}">삭제</button>
+                        <button type="button" class="btnNormal {$disp_basket|display}" onclick="{$act_basket}">장바구니담기</button>
+                    </span>
+                    <span class="gRight">
+                        <button type="button" class="btnStrong {$disp_order|display}" onclick="{$act_order}">주문하기</button>
+                    </span>
+                </div> -->
+            </li>
+            <li>
+                <div class="description">
+                    <p class="prdImg"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></p>
+                    <!-- <strong class="prdName"><a href="/product/detail.html{$param}">{$product_name}</a></strong>
+                    <ul module="product_setproduct" class="item">
+                        <li>{$product_name}</li>
+                        <li>{$product_name}</li>
+                    </ul>
+                    <p class="price">{$price}</p> -->
+                </div>
+                <!-- <ul class="option" module="product_mainoption">
+                    <li><span>{$option_name}</span> {$form.option}</li>
+                    <li><span>{$option_name}</span> {$form.option}</li>
+                </ul>
+                <ul class="option" module="product_addoption">
+                    <li><span>{$option_name}</span> {$form.add_option}</li>
+                    <li><span>{$option_name}</span> {$form.add_option}</li>
+                </ul> -->
+                <!-- <div class="btnArea typeFull">
+                    <span class="gLeft">
+                        <button type="button" class="btnNormal {$class_del}" href="#none" rel="{$rel_del}">삭제</button>
+                        <button type="button" class="btnNormal {$disp_basket|display}" onclick="{$act_basket}">장바구니담기</button>
+                    </span>
+                    <span class="gRight">
+                        <button type="button" class="btnStrong {$disp_order|display}" onclick="{$act_order}">주문하기</button>
+                    </span>
+                </div> -->
+            </li>
+        </ul>
+        <p class="empty {$empty_display|display}">최근본 상품 내역이 없습니다.</p>
+    </div>
+</div>
+
+<!-- <div module="myshop_asyncbankbook" class="ec-base-box gHalf">
+    @css(/css/module/myshop/bankbook.css)
+    <ul>
+        <li class="{$display_mileage|display}">
+            <strong class="title">가용{$mileage_name}</strong>
+            <strong class="data use">&nbsp;{$avail_mileage}</strong>
+            <a href="/myshop/mileage/historyList.html" class="btnNormal">조회</a>
+        </li>
+        <li>
+            <strong class="title">총{$mileage_name}</strong>
+            <strong class="data">{$total_mileage}</strong>
+        </li>
+        <li>
+            <strong class="title">사용{$mileage_name}</strong>
+            <strong class="data">{$used_mileage}</strong>
+        </li>
+        <li class="{$display_deposit|display}">
+           <strong class="title">{$deposit_name}</strong>
+           <strong class="data use">&nbsp;{$total_deposit}</strong>
+           <a href="/myshop/deposits/historyList.html" class="btnNormal">조회</a>
+        </li>
+        <li>
+            <strong class="title">총주문</strong>
+            <strong class="data">{$total_order_price}({$total_order_count}회)</strong>
+        </li>
+        <li class="{$display_coupon|display}">
+            <strong class="title">쿠폰</strong>
+            <strong class="data">{$coupon_cnt}<span>개</span></strong>
+            <a href="/myshop/coupon/coupon.html" class="btnNormal">조회</a>
+        </li>
+    </ul>
+</div> -->
+
+
+<!-- <li class="shopMain likeIt {$myLike_display|display}">
+    <h3><a href="{$myLike_href}"><strong>Like it</strong><span>좋아요</span></a></h3>
+    <p><a href="{$myLike_href}">'좋아요'를 선택한 상품과<br /> 상품분류 목록을 보여드립니다.</a></p>
+</li> -->
+
+

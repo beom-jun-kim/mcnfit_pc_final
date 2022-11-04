@@ -1,0 +1,34 @@
+.my_shop_cate .guide_title {display: flex; align-items: center;}
+.my_shop_cate .triangle {width: 0px; height: 0px; border-bottom: calc( 10px * 1.732 ) solid #000; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(90deg); margin: 5px 30px 0;}
+.my_shop_cate .my_shop_list {margin-top: 7px; font-weight: var(--font-weight); font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem;}
+
+.xans-myshop-head,
+.xans-myshop-mileagecouponpackage {max-width: 1441px; margin: 0 auto; font-weight: var(--font-weight); font-family: 'NanumBarunGothic', sans-serif;}
+.xans-myshop-mileagecouponpackage .ec-base-tab .menu {text-align: center; margin-top: 30px;}
+.xans-myshop-mileagecouponpackage .ec-base-tab .menu li {position: relative; width: 33%; margin-right: 7px; background: #f5f5f5; font-size: var(--big-font); padding: 35px 0;}
+.xans-myshop-mileagecouponpackage .ec-base-tab .menu li a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; line-height: 70px;}
+.xans-myshop-mileagecouponpackage .ec-base-tab .menu li:last-child {margin-right: 0; background: var(--second-color); color: var(--white-color);}
+.xans-myshop-mileagecouponpackage .ec-base-tab .menu li.selected:before {display: none;}
+
+.xans-myshop-summary {background: #f5f5f5; margin-top: 50px; font-family: 'Noto Sans KR',sans-serif; letter-spacing: -1px;}
+.xans-myshop-summary ul {display: flex; text-align: center;}
+.xans-myshop-summary ul li {padding: 3rem 0; width: 20%;}
+.xans-myshop-summary ul li .desc_box {border-right: 2px solid #dbdbdb; padding: 3.5rem 0;}
+.xans-myshop-summary ul li:last-child .desc_box {border-right: none;}
+.xans-myshop-summary .title {font-size: 1.3rem; margin-bottom: 10px;}
+.xans-myshop-summary .data {font-size: 2.5rem;}
+.xans-myshop-summary.ec-base-box.gHalf {padding: 0;}
+
+.xans-myshop-couponmemberlist .ec-base-table table {margin-top: 30px; border-top: 2px solid #000; border-bottom: 1px solid #dfdfdf; font-weight: normal; font-size: 1rem;}
+.xans-myshop-couponmemberlist .ec-base-table table th {font-weight: var(--font-weight); padding: 25px 0;}
+.xans-myshop-couponmemberlist .ec-base-table.typeList td {padding: 25px 0;}
+.xans-myshop-couponmemberlist .ec-base-table .right {text-align: center;}
+.xans-myshop-couponmemberlist .ec-base-table.typeList .center td.right {padding: 0;}
+.xans-myshop-couponmemberlist .ec-base-table table th:last-child {padding: 0 10rem; text-align: left;}
+.xans-myshop-couponmemberlist .ec-base-table .message {border-bottom: 1px solid #dfdfdf; border-right: none; border-left: none; font-size: 1rem;}
+
+.xans-myshop-head {font-size: var(--small-font); color: #a2a2a2;}
+.xans-myshop-head.ec-base-help {margin: 150px auto;}
+.xans-myshop-head h3 {margin-bottom: 1rem;}
+.xans-myshop-head ol {line-height: 25px; font-weight: normal;}
+.xans-myshop-head i {transform: translateY(2px); margin-right: 5px;}

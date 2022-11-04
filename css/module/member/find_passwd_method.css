@@ -1,0 +1,11 @@
+
+.xans-member-findpasswdmethod .inner { max-width: 545px; margin: 0 auto; padding-top:168px; font-family: 'NanumBarunGothic', sans-serif; font-weight: var(--font-weight); font-size: var(--big-font); }
+.xans-member-findpasswdmethod .inner .boxTitle {font-size: 2.8rem; text-align: center; padding-bottom: 30px; font-family: 'Noto Sans KR',sans-serif;}
+.xans-member-findpasswdmethod .inner .ec-base-desc {padding: 0 0 0 100px;}
+.xans-member-findpasswdmethod .inner .ec-base-desc li { margin:5px 0 0; }
+.xans-member-findpasswdmethod .inner .ec-base-desc li.mobile .number { text-decoration:none; }
+.xans-member-findpasswdmethod .inner input[type=text] { width:172px; }
+.xans-member-findpasswdmethod .inner .ec-base-desc .term { width:25%; font-weight: var(--font-weight);}
+.xans-member-findpasswdmethod .inner .ec-base-button { padding:40px 3px 10px 0; }
+.xans-member-findpasswdmethod .inner .ec-base-button[class*="gColumn"] [class^='btn'] {width: 252.5px; height: 74px; line-height: 74px; padding: 0; font-weight: var(--font-weight); font-size: 1.2rem;}
+.xans-member-findpasswdmethod input[type=radio], input[type=checkbox] {accent-color: #000;}

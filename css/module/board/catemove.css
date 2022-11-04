@@ -1,0 +1,3 @@
+.xans-board-catemove { padding:30px 10px 0; border-top:1px solid #d7d5d5; color:#757575; font-size:12px; }
+.xans-board-catemove p { font-size: 0;}
+.xans-board-catemove p select[id="board_category_move"] {font-size: 1rem;}

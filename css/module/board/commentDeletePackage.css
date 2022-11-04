@@ -1,0 +1,11 @@
+/* 게시판 전체 공통 */
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+/* 댓글삭제 */
+.xans-board-commentdel.ec-base-box { padding-top:150px; text-align:center; font-size: var(--big-font); font-weight: var(--font-weight); font-family: 'NanumBarunGothic', sans-serif; line-height: 25px;}
+.xans-board-commentdel .commentDel { width:500px; margin:0 auto; }
+.xans-board-commentdel .commentDel .password {margin: 30px 0;}
+.xans-board-commentdel .commentDel .password input { width:500px; height:60px; line-height:28px;}
+.xans-board-commentdel .ec-base-button[class*="gColumn"] [class^='btn'] {border: 1px solid #d5d5d5; height: 55px;}
+.xans-board-commentdel .ec-base-button[class*="gColumn"] .btnNormal {background: var(--second-color); color: #fff;}
+.xans-board-commentdel .ec-base-button[class*="gColumn"] .btnEm {background: none; font-size: var(--big-font); font-family: 'NanumBarunGothic', sans-serif;}

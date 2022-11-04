@@ -1,0 +1,15 @@
+#myshopMain { margin:50px 0 0; }
+#myshopMain ul {display: flex; justify-content: flex-end;}
+#myshopMain .shopMain {margin-left: 40px;}
+#myshopMain .shopMain a {display: flex; align-items: center;}
+#myshopMain .shopMain a:before { display:block; content:""; width:65px; height:50px; background:url("//img.echosting.cafe24.com/skin/base/myshop/sfix_icon_shopMain.png") no-repeat 0 0; background-size: 365px;}
+#myshopMain .text_pad {padding-left: 10px;}
+#myshopMain .shopMain.order a:before { background-position:17px 0; }
+#myshopMain .shopMain.profile a:before { background-position:-80px 8px; }
+#myshopMain .shopMain.address a:before { background-position: -90px -173px }
+
+.xans-myshop-orderstate .shopMain {background: var(--second-color);}
+.shopMain {font-size: 1rem;}
+.shopMain,
+.xans-myshop-orderstate .state {font-family: 'NanumBarunGothic', sans-serif; font-weight: var(--font-weight);}
+.my_shop_inner {max-width: 1441px; margin: 0 auto;}

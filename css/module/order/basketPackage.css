@@ -1,0 +1,105 @@
+#contents { position:relative; }
+
+/* Tab */
+.xans-order-basketguide,
+.xans-order-basketpackage {font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem;}
+.xans-order-basketpackage .xans-order-tabinfo { margin:40px 0 50px; }
+.xans-order-basketpackage .xans-order-tabinfo .menu li {width: 49.5%; height: 75px; line-height: 75px; text-align: center; font-size: var(--big-font); font-weight: var(--font-weight); position: relative;}
+.xans-order-basketpackage .xans-order-tabinfo .menu li:first-child {border: 1px solid #000; box-sizing: border-box; margin-right: .5%;}
+.xans-order-basketpackage .xans-order-tabinfo .menu li:last-child {background: #f5f5f5;}
+.xans-order-basketpackage .xans-order-tabinfo .menu li a {position: absolute; width: 100%; left: 0;}
+.xans-order-basketpackage .orderListArea.gBorder td {border-left: none; padding: 30px 10px;}
+.xans-order-basketpackage .thumb img {width: 100%;}
+.xans-order-basketpackage input[type="checkbox"] {width: 18px; height: 18px;}
+.xans-order-basketpackage [class^='btnNormal'], a[class^='btnNormal'] {padding: 5px 10px;}
+.xans-order-basketpackage .ec-base-button {padding: 20px 0 0;}
+.xans-order-basketpackage .ec-base-button .gLeft a.btnEm {border: 1px solid #dfdfdf; padding: 5.5px 10px;}
+.xans-order-basketpackage .ec-base-button [class^='btn'][class*='Fix'].sizeM {width: 252.5px; height: 74px; line-height: 74px; padding: 0; font-weight: var(--font-weight); font-size: 1.2rem;}
+.xans-order-basketpackage .ec-base-button a:first-child {color: var(--white-color); margin-right: 2px;}
+.xans-order-basketpackage .ec-base-button a:nth-child(2) {border: 1px solid #dfdfdf; margin-left: 2px;}
+.xans-order-basketpackage .ec-base-button .gRight a[class^='btn'][class*='Fix'].sizeM {color: #000; width: 150px;}
+
+.xans-order-basketguide {color: #a2a2a2;}
+.xans-order-basketguide h3 {margin: 1rem 0;}
+.xans-order-basketguide .installment {margin-top: 2rem;}
+.xans-order-basketguide ol li {line-height: 25px;}
+.xans-order-basketguide i {transform: translateY(2px);}
+
+.xans-order-basketpackage .price_exp {padding:20px 0 50px 10px; font-size: var(--small-font); color: #616161;}
+.xans-order-basketpackage .xans-order-totalsummary {background: #f5f5f5; /* font-family: 'Noto Sans KR',sans-serif; */ padding: 35px 0 35px 350px; font-size: 1.2rem; /* font-size: 1.5rem; */}
+.xans-order-basketpackage .xans-order-totalsummary strong {font-weight: var(--font-weight); letter-spacing: -1px;}
+.xans-order-basketpackage .xans-order-totalsummary td {border: none; font-size: 1.5rem; /* font-size: 2.5rem; */}
+.xans-order-basketpackage .xans-order-totalsummary .center td:last-child,
+.xans-order-basketpackage .xans-order-totalsummary th:last-child {padding-right: 15rem;}
+.xans-order-basketpackage .basket_symbol {position: relative; left: -4vw; /* left: -2vw; */}
+
+/* List */
+.xans-order-basketpackage .xans-order-empty p { margin:50px 0; text-align:center; }
+.xans-myshop-wishlist .title,
+.xans-order-basketpackage .orderListArea .title {padding:0 0 15px 9px; line-height:38px;}
+.xans-myshop-wishlist table,
+.xans-order-basketpackage .orderListArea .title + table { margin:0; border-top: 2px solid #000; border-bottom: 2px solid #000;}
+
+.xans-order-basketpackage .orderListArea th {font-weight: var(--font-weight); padding: 30px 0;}
+.xans-order-basketpackage strong.txtEm,
+.xans-order-basketpackage .ec-base-button .text,
+.xans-order-basketpackage .ec-base-table td.right span {font-weight: var(--font-weight);}
+.xans-order-basketpackage .ec-base-table.typeList .center td.left {padding-left: 30px;}
+.xans-order-basketpackage .ec-base-table tfoot td .gLeft { float:left; font-weight: var(--font-weight);}
+.xans-order-basketpackage .ec-base-table td.button a { width:100px; height: 30px; margin:2px 0; line-height: 30px; padding: 0;}
+.xans-order-basketpackage .ec-base-table .name .ec-set-product-name { display:block; }
+.xans-order-basketpackage .ec-base-table .engName { display:block; }
+.xans-order-basketpackage .ec-base-table td div.option,
+.xans-order-basketpackage .ec-base-table td ul.option > li { margin:9px 0 0; color:#707070; line-height:16px; }
+.xans-order-basketpackage .ec-base-table td div.option span.file a,
+.xans-order-basketpackage .ec-base-table td ul.option > li > span.file a { margin:0 0 0 4px; padding:0 0 0 11px; color:#707070; text-decoration:underline; background:url("//img.echosting.cafe24.com/skin/base/common/ico_file.gif") no-repeat 0 2px; }
+.xans-order-basketpackage strong {font-weight: normal;}
+
+.xans-order-basketpackage .xans-order-allotmentinfo { padding:10px 0 8px 10px; border-bottom:1px solid #e8e5e4; }
+.xans-order-basketpackage .xans-order-allotmentinfo .info { padding:8px 0 0 23px; color:#707070; font-size:11px; line-height:1.5; background:url("//img.echosting.cafe24.com/skin/base/common/ico_info.gif") no-repeat 0 8px; }
+.xans-order-basketpackage .xans-order-basketpriceinfoguide p.info { padding:8px 0 8px 33px; border-bottom:1px solid #e8e5e4; color:#757575; line-height:1.5; font-size:11px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_info.gif") no-repeat 9px 8px; }
+.xans-order-basketpackage .xans-order-totalorder { margin:30px 0 80px; }
+
+#NaverChk_Button { margin:10px 0; }
+
+/* Total */
+.xans-order-basketpackage .ec-base-table.total table { border-color:#777; }
+.xans-order-basketpackage .ec-base-table.total table td .box { word-break:normal; }
+
+/* 총 상품금액 상세내역 레이어 */
+.xans-order-basketpackage .totalDetail { display:none; z-index:100; width:300px; color:#707070; }
+.xans-order-basketpackage .totalDetail .content p { text-align:right; }
+.xans-order-basketpackage .totalDetail .content .ec-base-desc { margin:8px 0 0; padding-top:6px; border-top:1px dotted #b0b1b3; }
+
+/* 옵션변경 레이어 */
+.xans-order-basketpackage .optionModify { display:none; width:450px; color:#707070; }
+.xans-order-basketpackage .optionModify .prdInfo { margin:0 0 10px; padding:0 0 10px; border-bottom:1px dotted #b0b1b3; line-height:1.5; }
+.xans-order-basketpackage .optionModify .prdInfo li { color:#353535; font-weight:bold; }
+.xans-order-basketpackage .optionModify .prdInfo li.option { color:#707070; font-weight:normal; }
+.xans-order-basketpackage .optionModify .prdModify h4 { color:#353535; font-size:12px; }
+.xans-order-basketpackage .optionModify .prdModify li { padding:6px 0 0; }
+.xans-order-basketpackage .optionModify .prdModify li:after { content:""; display:block; clear:both; }
+.xans-order-basketpackage .optionModify .prdModify li span { float:left; width:110px; margin:3px 0 0; }
+.xans-order-basketpackage .optionModify .prdModify li select { float:right; width:294px; line-height:24px; font-size:12px; }
+.xans-order-basketpackage .optionModify .prdModify li input[type=text] { float:right; width:284px; }
+
+/* 배송비할인 레이어 */
+.xans-order-basketpackage td .box.shipping { line-height:1.3em; }
+.xans-order-basketpackage td .box.shipping .shippingArea { font-size:12px; line-height:1.3em; }
+.xans-order-basketpackage .shippingFee { position:relative; display:inline-block; vertical-align:middle; text-align:left; }
+.xans-order-basketpackage .shippingFee .ec-base-tooltip { display:block; margin:0 0 0 -180px; width:360px; }
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table { border-color:#d7d5d5; }
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table th { width:40px; }
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table th,
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table td { padding:7px 10px 8px 10px; height:auto; font-size:12px; line-height:1.5; text-align:left; }
+
+
+/* 추가한 css */
+.my_shop_cate .guide_title {display: flex; align-items: center;}
+.my_shop_cate .triangle {width: 0px; height: 0px; border-bottom: calc( 10px * 1.732 ) solid #000; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(90deg); margin: 5px 30px 0;}
+.my_shop_cate .my_shop_list {margin-top: 7px; font-weight: var(--font-weight); font-family: 'NanumBarunGothic', sans-serif; font-size: 1rem;}
+
+.xans-order-basketpackage {max-width: 1441px; margin: 0 auto;}
+.xans-order-basketpackage .orderStep {margin: 50px 0 -15px;}
+.xans-order-basketpackage .ec-base-tab .menu li.selected:before {display: none;}
+.xans-order-basketpackage .ec-base-tab.typeLight .menu li.selected a {margin: 0; border-bottom: none; color: #000; background: none;}
